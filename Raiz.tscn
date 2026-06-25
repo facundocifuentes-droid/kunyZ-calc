@@ -1,0 +1,166 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Calculadora.gd" type="Script" id=1]
+
+[sub_resource type="Theme" id=1]
+
+[sub_resource type="Theme" id=2]
+/colors/LineEdit = Color( 0, 0, 0, 1 )
+
+[node name="Raiz" type="Node"]
+
+[node name="Calculadora" type="Control" parent="."]
+margin_left = 2.0
+margin_top = 1.0
+margin_right = 221.0
+margin_bottom = 287.0
+theme = SubResource( 1 )
+script = ExtResource( 1 )
+
+[node name="Resultado" type="Label" parent="Calculadora"]
+margin_left = 22.0
+margin_top = 39.0
+margin_right = 190.0
+margin_bottom = 80.0
+theme = SubResource( 2 )
+
+[node name="BorrarTodo" type="Button" parent="Calculadora"]
+anchor_right = 1.825
+anchor_bottom = 0.5
+margin_left = 174.0
+margin_top = 158.0
+margin_right = -203.675
+margin_bottom = 74.0
+text = "C"
+
+[node name="1" type="Button" parent="Calculadora"]
+margin_left = 67.0
+margin_top = 101.0
+margin_right = 87.0
+margin_bottom = 121.0
+text = "1"
+
+[node name="2" type="Button" parent="Calculadora"]
+anchor_bottom = 2.65
+margin_left = 96.0
+margin_top = 101.0
+margin_right = 116.0
+margin_bottom = -777.35
+text = "2"
+
+[node name="suma" type="Button" parent="Calculadora"]
+margin_left = 22.0
+margin_top = 100.0
+margin_right = 42.0
+margin_bottom = 120.0
+text = "+"
+
+[node name="calcular" type="Button" parent="Calculadora"]
+margin_left = 22.0
+margin_top = 164.0
+margin_right = 42.0
+margin_bottom = 220.0
+text = "="
+
+[node name="resta" type="Button" parent="Calculadora"]
+margin_left = 22.0
+margin_top = 130.0
+margin_right = 41.0
+margin_bottom = 150.0
+text = "-"
+
+[node name="3" type="Button" parent="Calculadora"]
+margin_left = 126.0
+margin_top = 100.0
+margin_right = 148.0
+margin_bottom = 120.0
+text = "3"
+
+[node name="4" type="Button" parent="Calculadora"]
+margin_left = 68.0
+margin_top = 132.0
+margin_right = 88.0
+margin_bottom = 152.0
+text = "4"
+
+[node name="5" type="Button" parent="Calculadora"]
+margin_left = 98.0
+margin_top = 131.0
+margin_right = 118.0
+margin_bottom = 151.0
+text = "5"
+
+[node name="6" type="Button" parent="Calculadora"]
+margin_left = 129.0
+margin_top = 131.0
+margin_right = 149.0
+margin_bottom = 151.0
+text = "6"
+
+[node name="7" type="Button" parent="Calculadora"]
+margin_left = 68.0
+margin_top = 165.0
+margin_right = 88.0
+margin_bottom = 185.0
+text = "7"
+
+[node name="8" type="Button" parent="Calculadora"]
+anchor_bottom = 0.162
+margin_left = 98.0
+margin_top = 166.0
+margin_right = 118.0
+margin_bottom = 131.082
+text = "8"
+
+[node name="9" type="Button" parent="Calculadora"]
+margin_left = 129.0
+margin_top = 165.0
+margin_right = 149.0
+margin_bottom = 185.0
+text = "9"
+
+[node name="0" type="Button" parent="Calculadora"]
+margin_left = 70.0
+margin_top = 197.0
+margin_right = 90.0
+margin_bottom = 217.0
+text = "0"
+
+[node name="mult" type="Button" parent="Calculadora"]
+margin_left = 176.0
+margin_top = 128.0
+margin_right = 195.0
+margin_bottom = 148.0
+text = "x"
+
+[node name="dividir" type="Button" parent="Calculadora"]
+margin_left = 175.0
+margin_top = 99.0
+margin_right = 194.0
+margin_bottom = 119.0
+text = "/"
+
+[node name="00" type="Button" parent="Calculadora"]
+margin_left = 101.0
+margin_top = 197.0
+margin_right = 152.0
+margin_bottom = 217.0
+text = "00"
+
+[connection signal="pressed" from="Calculadora/BorrarTodo" to="Calculadora" method="_on_BorrarTodo_pressed"]
+[connection signal="pressed" from="Calculadora/1" to="Calculadora" method="_on_1_pressed"]
+[connection signal="pressed" from="Calculadora/2" to="Calculadora" method="_on_2_pressed"]
+[connection signal="pressed" from="Calculadora/suma" to="Calculadora" method="_on_suma_pressed"]
+[connection signal="pressed" from="Calculadora/calcular" to="Calculadora" method="_on_calcular_pressed"]
+[connection signal="pressed" from="Calculadora/resta" to="Calculadora" method="_on_resta_pressed"]
+[connection signal="pressed" from="Calculadora/3" to="Calculadora" method="_on_3_pressed"]
+[connection signal="pressed" from="Calculadora/4" to="Calculadora" method="_on_4_pressed"]
+[connection signal="pressed" from="Calculadora/5" to="Calculadora" method="_on_5_pressed"]
+[connection signal="pressed" from="Calculadora/6" to="Calculadora" method="_on_6_pressed"]
+[connection signal="pressed" from="Calculadora/7" to="Calculadora" method="_on_7_pressed"]
+[connection signal="pressed" from="Calculadora/8" to="Calculadora" method="_on_8_pressed"]
+[connection signal="pressed" from="Calculadora/9" to="Calculadora" method="_on_9_pressed"]
+[connection signal="pressed" from="Calculadora/0" to="Calculadora" method="_on_0_pressed"]
+[connection signal="pressed" from="Calculadora/mult" to="Calculadora" method="_on_mult_pressed"]
+[connection signal="pressed" from="Calculadora/dividir" to="Calculadora" method="_on_dividir_pressed"]
+[connection signal="pressed" from="Calculadora/00" to="Calculadora" method="_on_00_pressed"]
