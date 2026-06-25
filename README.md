@@ -1,6 +1,7 @@
 # kunyZ-calc
-kunyZ es una calculadora en GoDot. Trabajo practico N° 1 &amp; 2 de la materia Principios de Testing de la EPET N°30 de San Martín de los Andes. Profesor Eduardo Kunyz.
-## faq sobre kunyZ 
+kunyZ es una calculadora en GoDot. Trabajo practico N° 1 &amp; 2 de la materia Principios de Testing de la EPET N°30 de San Martín de los Andes. Profesor Eduardo Kunyz. La bautizamos humorísticamente y en grado de respeto como Kuny-Z, en honor a nuestro profesor Ing. Eduardo Kunysz. Kuny-Z es fruto de un trabajo novato con la función de aprender GoDot.
+
+## sobre kunyZ 
 kunyZ labura, verbatim, sobre los siguientes requerimientos de funcionamiento.
 **Trabajo practico N°1: esc. Eduardo Kunyz**
 Primer proyecto en la interfaz, desarrollaremos una simple calculadora. 
